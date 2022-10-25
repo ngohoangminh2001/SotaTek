@@ -1,0 +1,184 @@
+#parent-div,
+#div-1-2,
+.div2021,
+.div201,
+.div2011 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#parent-div {
+    text-align: center;
+}
+
+#div-1,
+#div-2,
+.div201,
+.div202 {
+    border: 1px solid black;
+    font: 1em sans-serif;
+}
+
+.div202 {
+    padding: 25px;
+    text-align: left;
+    display: none;
+}
+
+.div20 {
+    width: 90%;
+    margin: 15px 30px;
+}
+
+#add-new-task,
+#search {
+    width: 85%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#div-1-1,
+#div-1-2 {
+    text-align: left;
+    margin-left: 40px;
+}
+
+#due-date-1,
+.priority {
+    width: 87%;
+    height: 33px;
+    padding-left: 10px;
+}
+
+.due-date-2,
+.priority-selection {
+    width: 95%;
+    height: 33px;
+    padding-left: 10px;
+}
+
+.priority-selection,
+.priority-text {
+    margin-left: 15px;
+}
+
+#add {
+    margin-top: 50px;
+    width: 88%;
+    height: 32px;
+    margin-bottom: 375px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+#add:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.div201 {
+    text-align: left;
+    padding: 15px;
+}
+
+.tick {
+    margin-top: 7.5px;
+}
+
+.task-name {
+    margin-top: 12.5px;
+}
+
+.detail {
+    width: 100px;
+    height: 30px;
+    background-color: darkturquoise;
+    color: white;
+    border: none;
+    margin-left: 50px;
+}
+
+.detail:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.remove {
+    margin-left: 15px;
+    height: 30px;
+    width: 85px;
+    background-color: crimson;
+    color: white;
+    border: none;
+}
+
+.remove:hover {
+    background-color: red;
+    color: black;
+}
+
+.tasks {
+    padding-left: 10px;
+    height: 30px;
+    width: 97%;
+}
+
+.description {
+    width: 99%;
+}
+
+.update {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.update:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.div2012 {
+    margin-top: 10px;
+}
+
+/* #minh {
+    display: block;
+} */
+
+#div-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#bulk-action {
+    width: 100%;
+    background-color: lightgray;
+    margin-top: 20px;
+    height: 100px;
+    display: none;
+}
+
+#bulk-text {
+    margin-left: 30px;
+}
+
+#bulk-text, #bulk-buttons {
+    display: flex;
+    align-items: center;
+}
+
+#done {
+    background-color: blue;
+}
+
+#done:hover {
+    background-color: lightskyblue;
+}

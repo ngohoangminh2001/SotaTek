@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./SotaTek.css">
+    <script src="./SotaTek.js"></script>
+</head>
+<body>
+    <div id="parent-div">
+        <div id="div-1">
+            <h1 id="new-task">New Task</h1>
+            <input id="add-new-task" placeholder="Add new task ...">
+            <div id="div-1-1">
+                <p><b>Description</b></p>
+                <textarea name="" id="new-task-description" cols="72" rows="10"></textarea>
+            </div>
+            <div id="div-1-2">
+                <div id="div-1-2-1">
+                    <p><b>Due Date</b></p>
+                    <input type="date" id="due-date-1" class="due-date">
+                </div>
+                <div id="div-1-2-2">
+                    <p><b>Priority</b></p>
+                    <select name="" class="priority" id="priority-selection">
+                        <option>Normal</option>
+                        <option>Low</option>
+                        <option>High</option>
+                    </select>
+                </div>
+            </div>
+            <div id="div-1-3">
+                <button id="add">Add</button>
+            </div>
+        </div>
+        <div id="div-2">
+            <h1 id="to-do-list">To Do List</h1>
+            <input id="search" placeholder="Search ...">
+            <p></p>
+
+            <div id="div-2-1" class="div20">
+                <div id="div-2-1-1" class="div201">
+                    <div id="div-2-1-1-1" class="div2011">
+                        <input type="checkbox" id="tick-do-homework" class="tick" name="tick">
+                        <label id="text-do-homework" class="task-name" for="tick"></label>
+                    </div>
+                    <div id="div-2-1-1-2" class="div2012">
+                        <button id="detail-homework" class="detail">Detail</button>
+                        <button id="remove-homework" class="remove">Remove</button>
+                    </div>
+                </div>
+                <div id="div-2-1-2" class="div202">
+                    <input type="text" id="do-homework" class="tasks">
+                    <p><b>Description</b></p>
+                    <textarea name="" class="description" id="description-homework" cols="30" rows="10" placeholder="Lorem Ipsum...."></textarea>
+                    <div id="div-2-1-2-1" class="div2021">
+                        <div id="div-2-1-2-1-1" class="div20211">
+                            <p><b>Due Date</b></p>
+                            <input type="date" id="due-date-2-homework" class="due-date-2">
+                        </div>
+                        <div id="div-2-1-2-1-2" class="div20212">
+                            <p id="priority-homework-text" class="priority-text"><b>Priority</b></p>
+                            <select name="" id="priority-homework-selection" class="priority-selection">
+                                <option>Normal</option>
+                                <option>Low</option>
+                                <option>High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="update-homework" class="update">Update</button>
+                </div>
+            </div>
+
+            <div id="div-2-2" class="div20">
+                <div id="div-2-2-1" class="div201">
+                    <div id="div-2-2-1-1" class="div2011">
+                        <input type="checkbox" id="tick-do-housework" class="tick" name="tick">
+                        <label id="text-do-housework" class="task-name" for="tick"></label>
+                    </div>
+                    <div id="div-2-2-1-2" class="div2012">
+                        <button id="detail-housework" class="detail">Detail</button>
+                        <button id="remove-housework" class="remove">Remove</button>
+                    </div>
+                </div>
+                <div id="div-2-2-2" class="div202">
+                    <input type="text" id="do-housework" placeholder="Do housework" class="tasks">
+                    <p><b>Description</b></p>
+                    <textarea name="" class="description" id="description-housework" cols="30" rows="10" placeholder="Lorem Ipsum...."></textarea>
+                    <div id="div-2-2-2-1" class="div2021">
+                        <div id="div-2-2-2-1-1" class="div20211">
+                            <p><b>Due Date</b></p>
+                            <input type="date" id="due-date-2-housework" class="due-date-2">
+                        </div>
+                        <div id="div-2-2-2-1-2" class="div20212">
+                            <p id="priority-housework-text" class="priority-text"><b>Priority</b></p>
+                            <select name="" id="priority-housework-selection" class="priority-selection">
+                                <option>Normal</option>
+                                <option>Low</option>
+                                <option>High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="update-housework" class="update">Update</button>
+                </div>
+            </div>
+
+            <div id="div-2-3" class="div20">
+                <div id="div-2-3-1" class="div201">
+                    <div id="div-2-3-1-1" class="div2011">
+                        <input type="checkbox" id="tick-learn-something" class="tick" name="tick">
+                        <label id="text-learn-something" class="task-name" for="tick"></label>
+                    </div>
+                    <div id="div-2-3-1-2" class="div2012">
+                        <button id="detail-something" class="detail">Detail</button>
+                        <button id="remove-something" class="remove">Remove</button>
+                    </div>
+                </div>
+                <div id="div-2-3-2" class="div202">
+                    <input type="text" id="learn-something" placeholder="Do housework" class="tasks">
+                    <p><b>Description</b></p>
+                    <textarea name="" class="description" id="description-something" cols="30" rows="10" placeholder="Lorem Ipsum...."></textarea>
+                    <div id="div-2-3-2-1" class="div2021">
+                        <div id="div-2-3-2-1-1" class="div20211">
+                            <p><b>Due Date</b></p>
+                            <input type="date" id="due-date-2-something" class="due-date-2">
+                        </div>
+                        <div id="div-2-3-2-1-2" class="div20212">
+                            <p id="priority-something-text" class="priority-text"><b>Priority</b></p>
+                            <select name="" id="priority-something-selection" class="priority-selection">
+                                <option>Normal</option>
+                                <option>Low</option>
+                                <option>High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="update-something" class="update">Update</button>
+                </div>
+            </div>
+
+            <div id="bulk-action">
+                <div id="bulk-text">
+                    <p>Bulk Action:</p>
+                </div>
+                <div id="bulk-buttons">
+                    <button class="detail" id="done">Done</button>
+                    <button class="remove" id="delete">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
