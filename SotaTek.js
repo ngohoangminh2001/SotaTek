@@ -28,8 +28,14 @@ window.onload = () => {
     document.getElementById('due-date-1').setAttribute('value', new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate());
 
     document.getElementById('add').onclick = () => {
-        if (document.getElementById('add-new-task').value == '') alert("Task title is a required field. ");
+        var existed = false;
+        for (const value of toDoTasks)
+            if (value.name.toLowerCase() == document.getElementById('add-new-task').value.toLowerCase())
+                existed = true;
+        if (document.getElementById('add-new-task').value == '') document.getElementById("required").innerHTML = "Task title is a required field.";
+        else if (existed == true) document.getElementById("required").innerHTML = "Task title has already been existed.";
         else {
+            document.getElementById("required").innerHTML = "";
             toDoTasks.push({
                 name: document.getElementById('add-new-task').value,
                 description: document.getElementById('new-task-description').value,

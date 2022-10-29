@@ -147,9 +147,11 @@
     margin-top: 10px;
 }
 
-/* #minh {
-    display: block;
-} */
+#minh {
+    color: red;
+    text-align: left;
+    margin-left: 50px;
+}
 
 #div-2 {
     display: flex;
